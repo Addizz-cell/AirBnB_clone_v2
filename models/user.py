@@ -2,9 +2,11 @@
 """Defines the User class."""
 from models.base_model import Base
 from models.base_model import BaseModel
-from sqlalchemy import Column
+from sqlalchemy import Column, Integer
 from sqlalchemy import String
 from sqlalchemy.orm import relationship
+from models.place import Place
+from models.review import Review
 
 
 class User(BaseModel, Base):
